@@ -1,0 +1,50 @@
+@media (min-width: 1000px) {
+    .episode-list {
+        width: 60vw;
+        border: 2px solid #1e1e1e; /* Border around the description */
+        border-radius: 4px; /* Rounded corners for the border */
+        padding: 10px; /* Padding inside the border */
+        background-color: #353535; /* Background color inside the border */
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        gap: 10px;
+    }
+    
+    .episode-list ul {
+        justify-content: flex-start;
+        list-style-type: none;
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        gap: 10px;
+    }
+    
+    video {
+        width: 60vw;
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 999px) {
+    .episode-list {
+        width: 95vw;
+        border: 2px solid #1e1e1e; /* Border around the description */
+        border-radius: 4px; /* Rounded corners for the border */
+        padding: 5px; /* Padding inside the border */
+        background-color: #353535; /* Background color inside the border */
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        gap: 10px;
+    }
+    
+    .episode-list ul {
+        justify-content: flex-start;
+        list-style-type: none;
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        gap: 10px;
+    }
+    
+    video {
+        width: 95vw;
+        height: auto;
+        background-color: black;
+    }
+    
+}

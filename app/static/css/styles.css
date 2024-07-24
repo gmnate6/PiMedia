@@ -1,0 +1,181 @@
+@media (min-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-color: #353535;
+        color: #cccccc;
+        font-size: 20px;
+    }
+    
+    header {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #272727;
+        padding: 0 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #cccccc;
+        transition: color 0.3s;
+    }
+
+    a.active {
+        color: #3655b5;
+    }
+    
+    a:hover {
+        color: #3655b5;
+    }
+    
+    header img {
+        height: 100%;
+        width: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    nav li {
+        margin-left: 20px;
+    }
+    
+    nav a {
+        font-size: 20px;
+    }
+    
+    .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .content-logo {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .scrollable {
+        width: 100%; /* Set the width of the scrollable area */
+        max-height: 100%; /* Set the max-height to control scrolling */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto; /* Enable scrolling only when needed */
+        list-style-type: none; /* Remove bullet points from list */
+    }    
+}
+
+@media (max-width: 999px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+        background-color: #353535;
+        color: #cccccc;
+        font-size: 20px;
+    }
+
+    header {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #272727;
+        padding: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #cccccc;
+        transition: color 0.3s;
+    }
+
+    a.active {
+        color: #3655b5;
+    }
+
+    a:hover {
+        color: #3655b5;
+    }
+
+    header img {
+        height: 80%;
+        width: auto;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .content-logo {
+        margin-top: -150px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .scrollable {
+        flex: 1;
+        width: 100%; /* Set the width of the scrollable area */
+        max-height: 100%; /* Set the max-height to control scrolling */
+        padding-bottom: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto; /* Enable scrolling only when needed */
+        list-style-type: none; /* Remove bullet points from list */
+    }
+}

@@ -1,0 +1,106 @@
+@media (min-width: 1000px) {
+    .media-container {
+        display: flex;
+        align-items: flex-start; /* Align items at the top */
+        width: 60vw;
+        height: 20vw;
+        padding: 10px;
+        margin: 0 auto; /* Center container horizontally */
+        overflow: hidden; /* Ensure content does not overflow */
+    }
+    
+    .image-content {
+        flex-shrink: 0; /* Prevent image from shrinking */
+        height: 100%;
+        width: auto;
+        overflow: hidden; /* Ensure content does not overflow */
+    }
+    
+    .image-content img {
+        height: 100%;
+        width: auto;
+        display: block; /* Remove extra space below the image */
+    }
+    
+    .text-content {
+        height: 100%;
+        flex: 1; /* Take up remaining space */
+        padding: 20px;
+        background-color: #272727;
+    }
+    
+    .title-container {
+        margin-bottom: 10px; /* Space between title and description */
+        text-align: center; /* Center the title text */
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+    
+    .description-container {
+        flex: 1; /* Take up remaining vertical space */
+        border: 2px solid #1e1e1e; /* Border around the description */
+        border-radius: 4px; /* Rounded corners for the border */
+        padding: 10px; /* Padding inside the border */
+        background-color: #353535; /* Background color inside the border */
+    }
+    
+    .description {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 999px) {
+    .media-container {
+        display: flex;
+        align-items: flex-start; /* Align items at the top */
+        width: 100vw;
+        height: 60vw;
+        padding: 10px;
+        margin: 0 auto; /* Center container horizontally */
+        overflow: hidden; /* Ensure content does not overflow */
+    }
+    
+    .image-content {
+        flex-shrink: 0; /* Prevent image from shrinking */
+        height: 100%;
+        width: auto;
+        overflow: hidden; /* Ensure content does not overflow */
+    }
+    
+    .image-content img {
+        height: 100%;
+        width: auto;
+        display: block; /* Remove extra space below the image */
+    }
+    
+    .text-content {
+        height: 100%;
+        flex: 1; /* Take up remaining space */
+        padding: 10px;
+        background-color: #272727;
+    }
+    
+    .title-container {
+        margin-bottom: 5px; /* Space between title and description */
+        text-align: center; /* Center the title text */
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+    
+    .description-container {
+        flex: 1; /* Take up remaining vertical space */
+        border: 2px solid #1e1e1e; /* Border around the description */
+        border-radius: 4px; /* Rounded corners for the border */
+        padding: 5px; /* Padding inside the border */
+        background-color: #353535; /* Background color inside the border */
+    }
+    
+    .description {
+        font-size: 14px;
+    }
+}

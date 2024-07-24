@@ -1,0 +1,13 @@
+<div class="media-container">
+    <div class="image-content">
+        <img src="{{ url_for('media', category=data.category, id=data.id, filename='cover.png') }}">
+    </div>
+    <div class="text-content">
+        <div class="title-container">
+            <a href="{{ url_for('play_redirect', category=data.category, id=data.id) }}" class="title">{{ data.title }}</a>
+        </div>
+        <div class="description-container">
+            <p class="description">{{ data.description }}</p>
+        </div>
+    </div>
+</div>

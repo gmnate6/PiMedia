@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/snapshot.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/player.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="scrollable">
+        <li>
+            {% include "snapshot.html" %}
+        </li>
+
+        {% if episodes %}
+            <div class="episode-list">
+                <nav>
+                    <ul>
+                        {% for episode in episodes %}
+                            <li>
+                                <a href="{{ url_for('play', category=data.category, id=data.id, filename=episode) }}" class="{% if episode == data.filename %}active{% endif %}">
+                                    {{ episode.split(".")[0] }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        {% endif %}
+
+        <video width="400" controls>
+            <source src="{{ url_for('media', category=data.category, id=data.id, filename=data.filename) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+{% endblock %}
